@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>體脂肪計算器</title>
+    <script src="js/vue.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!--Bootstrap 4-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>-->
+</head>
+
+<body>
+    <div id="app">
+        <div class="col-10 col-m-8 container">
+            <!-- BMI Section -->
+            <section class="bmi">
+                <div class="left-section">
+                    <h3 class="title">BMI</h3>
+                    <div id="bmi" v-model="bmi">{{cal_bmi}}</div>
+                </div>
+                <div class="right-section">
+                    <div class="input">
+                        <h6 class="label">身高（公尺）</h6>
+                        <input type="number" id="height" v-model="height">
+                    </div>
+
+                    <div class="input">
+                        <h6 class="label">體重（公斤）</h6>
+                        <input type="number" id="weight" v-model="weight">
+                    </div>
+                </div>
+            </section>
+            <!-- Bodyfat Section -->
+            <section class="bodyfat">
+                <div class="left-section">
+                    <h3 class="title">Body Fat</h3>
+                    <div id="bodyfat" v-model="bodyfat">{{cal_bodyfat}}</div>
+                </div>
+                <div class="right-section">
+                    <div class="input">
+                        <h6 class="label">年齡</h6>
+                        <input type="number" id="age" v-model="age">
+                    </div>
+
+                    <div class="input">
+                        <h6 class="label">性別</h6>
+                        <select id="gender" v-model="boy">
+                                <option></option>
+                                <option value="1">男性</option>
+                                <option value="0">女性</option>
+                        </select>
+                    </div>
+
+                    <div class="button">
+                        <button id="body-cal" @click.prevent="result()">查表</button>
+                        <button id="body-reset" @click.prevent="reset()">重設</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+<script src="javascript.js"></script>
+
+</html>
