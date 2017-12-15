@@ -33,66 +33,66 @@ var app = new Vue({
             if (this.boy == 1) {
                 if (this.age <= 30) {
                     if (this.bodyfat <= 8) {
-                        alert('½G');
+                        alert('ç˜¦');
                     } else if (this.bodyfat <= 16.2) {
-                        alert('²z·Q');
+                        alert('ç†æƒ³');
                     } else if (this.bodyfat <= 22.1) {
-                        alert('¼Ð·Ç');
+                        alert('æ¨™æº–');
                     } else {
-                        alert('ªÎ');
+                        alert('è‚¥');
                     }
                 } else if (this.age <= 46) {
                     if (this.bodyfat <= 12.5) {
-                        alert('2½G');
+                        alert('2ç˜¦');
                     } else if (this.bodyfat <= 18.6) {
-                        alert('2²z·Q');
+                        alert('2ç†æƒ³');
                     } else if (this.bodyfat <= 25.6) {
-                        alert('2¼Ð·Ç');
+                        alert('2æ¨™æº–');
                     } else {
-                        alert('2ªÎ');
+                        alert('2è‚¥');
                     }
                 } else {
                     if (this.bodyfat <= 16.2) {
-                        alert('3½G');
+                        alert('3ç˜¦');
                     } else if (this.bodyfat <= 23.4) {
-                        alert('3²z·Q');
+                        alert('3ç†æƒ³');
                     } else if (this.bodyfat <= 29) {
-                        alert('3¼Ð·Ç');
+                        alert('3æ¨™æº–');
                     } else {
-                        alert('3ªÎ');
+                        alert('3è‚¥');
                     }
                 }
             } else {
                 alert("G");
                 if (this.age <= 30) {
                     if (this.bodyfat <= 18.6) {
-                        alert('½G');
+                        alert('ç˜¦');
                     } else if (this.bodyfat <= 24.1) {
-                        alert('²z·Q');
+                        alert('ç†æƒ³');
                     } else if (this.bodyfat <= 31) {
-                        alert('¼Ð·Ç');
+                        alert('æ¨™æº–');
                     } else {
-                        alert('ªÎ');
+                        alert('è‚¥');
                     }
                 } else if (this.age <= 46) {
                     if (this.bodyfat <= 22.2) {
-                        alert('2½G');
+                        alert('2ç˜¦');
                     } else if (this.bodyfat <= 27.3) {
-                        alert('2²z·Q');
+                        alert('2ç†æƒ³');
                     } else if (this.bodyfat <= 33.5) {
-                        alert('2¼Ð·Ç');
+                        alert('2æ¨™æº–');
                     } else {
-                        alert('2ªÎ');
+                        alert('2è‚¥');
                     }
                 } else {
                     if (this.bodyfat <= 25.5) {
-                        alert('3½G');
+                        alert('3ç˜¦');
                     } else if (this.bodyfat <= 30.2) {
-                        alert('3²z·Q');
+                        alert('3ç†æƒ³');
                     } else if (this.bodyfat <= 36) {
-                        alert('3¼Ð·Ç');
+                        alert('3æ¨™æº–');
                     } else {
-                        alert('3ªÎ');
+                        alert('3è‚¥');
                     }
                 }
             }
